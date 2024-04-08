@@ -1,0 +1,16 @@
+.section-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.status-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}

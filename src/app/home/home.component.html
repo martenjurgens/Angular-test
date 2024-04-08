@@ -1,0 +1,40 @@
+<section class="section-container">
+    <div>
+        <form [formGroup]="jsonForm">
+            <textarea type="text" placeholder="Enter your json..." rows="50" cols="100"
+                formControlName="data"></textarea>
+            <div class="button-container">
+                <button (click)="createObj()">Create</button>
+                <button (click)="resetForm()">Reset</button>
+            </div>
+        </form>
+
+        <div></div>
+
+
+        <div class="status-container">
+            <p>Object exists:</p>
+            <p>{{hasObj ? "True" : "False"}}</p>
+
+        </div>
+
+
+    </div>
+
+    <div>
+
+        <form [formGroup]="displayForm">
+            <textarea type="text" placeholder="Your object will appear here" rows="50" cols="100"
+                formControlName="data"></textarea>
+        </form>
+
+        <div class="button-container">
+            <button (click)="getFullObject()">getFullObject()</button>
+            <button (click)="convertObjectToArray()">convertObjectToArray</button>
+            <button (click)="getObjectProperty()">getObjectProperty</button>
+            <button (click)="setObjectProperty()">setObjectProperty</button>
+
+        </div>
+
+    </div>
+</section>
